@@ -1,0 +1,60 @@
+
+<!doctype html>
+<html>
+<head>
+  <title>腾讯历史</title>
+  <meta charset=utf-8>
+  <link rel="stylesheet" type="text/css" href="css/history-news.css">
+  <script type="text/javascript" src="js/jquery-1.6.4.js"></script>
+  </head>
+<script type="text/javascript">
+		$(document).scroll(function(){
+		var tops=$(this).scrollTop();
+		
+		if(tops>100){
+			$("#top").css("display","block");
+			
+		}
+		else{
+			$("#top").css("display","none");
+		}
+		})
+$(document).ready(function(){
+		$("#top").click(function(){
+		 var tops=$(window).scrollTop();
+         $('body,html').animate({ scrollTop: 0 }, 500);
+    }) })
+	$(document).ready(function(){
+        $("#content").children($("input")).focus(function(){
+        $("#content").children($("p")).css("display","block");
+    })
+       }) 
+        $(document).ready(function(){
+        $("#content").children($("input")).blur(function(){
+        $(".p1").css("display","none");
+    })
+});
+</script>
+
+<body>
+	<div id="head">
+		<div class="logo"><img src="img/lishi_logo_black.jpg"></div>
+		<div class="linke"><a href="index.html">腾讯网首页</a><a>|</a><a href="#">网站导航</a><a>|</a><a href="#">邮箱</a></div>
+		<div class="link2"><a href="#" class="a1"><img src="img/1.png" ><a href="#"><img src="img/2.png"><p class="p1">微博</p><a href="#"><img src="img/3.png"><p class="p2">Qzone</p><a href="#"><img src="img/4.png"><p class="p3">qq邮箱</p><a href="#"><img src="img/5.png"><p class="p4">订阅</p><a href="#"><img src="img/6.png"><p class="p5">收藏</p></a></div>
+	</div><!-- 导航1 -->
+	<div id="nav">
+		<div class="nav3"><img src="img/nav3.png"></div>
+		<div class="nav4"><a href="#" class="sy">首页</a><a>|</a><a href="#" class="wzdh">网站导航</a><a>|</a><a href="#" class="bxwl">编读往来</a></div>
+		<div class="nav2"><img src="img/nav2.png"><img src="img/nav1.png"></div>
+	</div><!-- 导航2 -->
+	<div id="content">
+	     <h3>最新专题</h3>
+		 <input type="text" value="搜索关键字" onfocus="if(this.value == '搜索关键字') this.value = ''" onblur="if(this.value =='') this.value = '搜索关键字'" style="height:20px;width:200px"> <img src="img/soso.png" class="soimg"><p class="p1">搜索关键词</p><img src="img/6G`PQ7Z[I7S06{K_G5I3FG3.png" class="qqleft"><img src="img/6G`PQ7Z[I7S06{K_G5I3FG3.png" class="qqleft1"><img src="img/6G`PQ7Z[I7S06{K_G5I3FG3.png" class="qqleft2">
+	</div><!-- 图片内容left -->
+	<div id="section">
+		<p class="p2">提问编辑</p><img src="img/QJLUH)3WMKG1JA33W0KQC)G.png" class="qqright"><img src="img/QJLUH)3WMKG1JA33W0KQC)G.png" class="qqright1"><img src="img/QJLUH)3WMKG1JA33W0KQC)G.png" class="qqright2">
+	</div><!-- 内容right -->
+	<div id="footer">版权信息qq</div><!-- 版权信息 -->
+	<div id="top"><a><span>▲</span>TOP</a></div><!-- 返回顶部 -->
+</body>
+</html>

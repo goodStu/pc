@@ -1,0 +1,493 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>军事_新闻中心_腾讯网</title>
+		<link rel="stylesheet" type="text/css" href="css/mil_index.css">
+		<link rel="shortcot icon" href="img/1.ico">
+			<script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
+			<script type="text/javascript">
+$(document).ready(function(){
+	$("#banner").mouseover(function(){
+		$(this).children("a").children('img').stop().animate({"left":"-30px","top":"-24px","width":"700px","height":"370px","z-index":"88"},100);
+	})
+	$("#banner").mouseout(function(){
+		$(this).children("a").children("img").stop().animate({"left":"0px","top":"0px","width":"670px","height":"346px","z-index":"0"},100);
+	})
+      $(".tp").mouseover(function(){
+		$(this).children("a").children('img').stop().animate({"left":"-10px","top":"-4px","width":"130px","height":"100px","z-index":"88"},100);
+	})
+	$(".tp").mouseout(function(){
+		$(this).children("a").children("img").stop().animate({"left":"0px","top":"0px","width":"120px","height":"96px","z-index":"0"},100);
+	})
+         $(".m").children("ul").children("li").children("a").children('img').mouseover(function(){
+		$(this).stop().animate({"left":"-10px","top":"-8px","width":"210px","height":"168px","z-index":"88"},100);
+	})
+	
+         $(".m").children("ul").children("li").children("a").children('img').mouseout(function(){
+		$(this).stop().animate({"left":"0px","top":"0px","width":"200px","height":"160px","z-index":"0"},100);
+	})
+         $(".more").click(function(){
+         	$(this).css("display","none");
+         	$(".h").css("display","block");
+         })
+          $(".goTop").click(function(){
+          	$("body").animate({"scrollTop":"0px"},500);
+          })
+          var i=0;
+          function test(){
+          	i++;
+            if(i>5){
+            	i=0;
+            }
+             
+          $(".inner").children('a').eq(i).css({"display":"block"}).siblings().css({"display":"none"});
+          $("#ico").children("span").eq(i).addClass("g").siblings().removeClass("g");
+          }
+          s=window.setInterval(test,1000);//轮播图
+          $(".cap").children("a").mouseover(function(){
+          	$(this).addClass("o").siblings().removeClass('o');
+          	var q=$(this).index();
+          	$(".liebiao").eq(q).css({"display":"block"}).siblings('.liebiao').css({"display":"none"});
+          })//选项卡
+          
+	})
+        $(document).scroll(function(){
+      var tops=$(this).scrollTop();
+      if(tops>50){
+        $(".goTop").css("display","block");
+        }
+})
+</script>
+	</head>
+	<body>
+		<div id="top">
+			<div id="logo">
+			    <a href="index.html"><img src="img/mil_index_02.png"> </a>
+		    </div>
+		    <div id="jun">
+		    	<img src="img/mil_index_01.png">
+		    </div>
+		    <div id="rss">
+		    	<a href="#">RSS</a>
+		    </div>
+		    <div id="serach">
+		    	<input type="text" name="ser" id="txt" />
+		    	<input type="submit" id="sub" value />
+		    </div>
+		</div>
+		<div id="nav">
+			<div id="nav1">
+				<ul>
+					<li><a href="#" id="t">腾讯军事</a></li>
+				    <li><a href="#">讲武堂</a></li>
+				    <li><a href="#">中国军情</a></li>
+				    <li><a href="#">周边扫描</a></li>
+				    <li><a href="#">环球军情</a></li>
+				    <li><a href="#">军备动态</a></li>
+				    <li><a href="#">高清图库</a></li>
+				    <li><a href="#">军事视频</a></li>
+				    
+				</ul>
+			</div>
+		</div>
+		<div id="content">
+			<div id="left">
+				<h2 class="subtitle">军事新闻</h2>
+				<div id="banner">
+					<a href="#"><img src="img/mil_index_04.jpg"></a>
+				    <div class="overlay">这款雷达能发现数千公里外的棒球</div>
+				</div>
+				<div class="y">
+				    <div class="tp">
+					    <a href="#" class="left1"><img src="img/mil_index_05.jpg"></a>
+				    </div>
+					    <a target="_blank" class="linkto" href="#">运20大型运输机即将服役 性能与美军C17相比如何？</a>
+				    <div class="co">
+					    <div class="info">
+						    <span class="from">腾讯军事</span>
+						    <span class="keywords">
+							    <a href="#" target="_blank">运20</a>
+							    <a href="#" target="_blank">c17</a>
+							    <a href="#" target="_blank">大型运输机</a>
+						    </span>
+						</div>
+						<div class="i"></div>
+						<div >
+							<a href="#" class="but">776</a>
+						</div>
+					</div>
+				</div>
+				<div class="y">
+				    <div class="tp">
+					    <a href="#" class="left1"><img src="img/mil_index_09.jpg"></a>
+				    </div>
+					    <a target="_blank" class="linkto" href="#">运20大型运输机即将服役 性能与美军C17相比如何？</a>
+				    <div class="co">
+					    <div class="info">
+						    <span class="from">腾讯军事</span>
+						    <span class="keywords">
+							    <a href="#" target="_blank">运20</a>
+							    <a href="#" target="_blank">c17</a>
+							    <a href="#" target="_blank">大型运输机</a>
+						    </span>
+						</div>
+						<div class="i"></div>
+						<div >
+							<a href="#" class="but">776</a>
+						</div>
+					</div>
+				</div>
+				<div class="y">
+				    <div class="tp">
+					    <a href="#" class="left1"><img src="img/mil_index_06.jpg"></a>
+				    </div>
+					    <a target="_blank" class="linkto" href="#">运20大型运输机即将服役 性能与美军C17相比如何？</a>
+				    <div class="co">
+					    <div class="info">
+						    <span class="from">腾讯军事</span>
+						    <span class="keywords">
+							    <a href="#" target="_blank">运20</a>
+							    <a href="#" target="_blank">c17</a>
+							    <a href="#" target="_blank">大型运输机</a>
+						    </span>
+						</div>
+						<div class="i"></div>
+						<div >
+							<a href="#" class="but">776</a>
+						</div>
+					</div>
+				</div>
+				<div class="y">
+				    <div class="tp">
+					    <a href="#" class="left1"><img src="img/mil_index_07.jpg"></a>
+				    </div>
+					    <a target="_blank" class="linkto" href="#">运20大型运输机即将服役 性能与美军C17相比如何？</a>
+				    <div class="co">
+					    <div class="info">
+						    <span class="from">腾讯军事</span>
+						    <span class="keywords">
+							    <a href="#" target="_blank">运20</a>
+							    <a href="#" target="_blank">c17</a>
+							    <a href="#" target="_blank">大型运输机</a>
+						    </span>
+						</div>
+						<div class="i"></div>
+						<div >
+							<a href="#" class="but">776</a>
+						</div>
+					</div>
+				</div>
+				<div class="y">
+				    <div class="tp">
+					    <a href="#" class="left1"><img src="img/mil_index_08.jpg"></a>
+				    </div>
+					    <a target="_blank" class="linkto" href="#">运20大型运输机即将服役 性能与美军C17相比如何？</a>
+				    <div class="co">
+					    <div class="info">
+						    <span class="from">腾讯军事</span>
+						    <span class="keywords">
+							    <a href="#" target="_blank">运20</a>
+							    <a href="#" target="_blank">c17</a>
+							    <a href="#" target="_blank">大型运输机</a>
+						    </span>
+						</div>
+						<div class="i"></div>
+						<div >
+							<a href="#" class="but">776</a>
+						</div>
+					</div>
+				</div>
+				<div class="m">
+					<a target="_blank" class="link" href="#">美军在亚太地区的第2艘航母开始巡航</a>
+					<ul>
+						<li><a href="#"><img src="img/mil_index_06.jpg"></a></li>
+						<li><a href="#"><img src="img/mil_index_07.jpg"></a></li>
+						<li class="k"><a href="#"><img src="img/mil_index_08.jpg"></a></li>
+					</ul>
+					 <div class="co">
+					    <div class="info">
+						    <span class="from">环球网</span>
+						    <span class="keywords">
+							    <a href="#" target="_blank">海军防空兵</a>
+							    <a href="#" target="_blank">战车</a>
+							    <a href="#" target="_blank">反潜机</a>
+						    </span>
+						</div>
+						<div class="b"></div>
+						<div >
+							<a href="#" class="but">57</a>
+						</div>
+					</div>
+				</div>
+				<div class="m">
+					<a target="_blank" class="link" href="#">天兵亮剑 空降战车高原昼夜发射导弹</a>
+					<ul>
+						<li><a href="#"><img src="img/mil_index_09.jpg"></a></li>
+						<li><a href="#"><img src="img/mil_index_10.jpg"></a></li>
+						<li class="k"><a href="#"><img src="img/mil_index_11.jpg"></a></li>
+					</ul>
+					 <div class="co" id="d">
+					    <div class="info">
+						    <span class="from">环球网</span>
+						    <span class="keywords">
+							    <a href="#" target="_blank">海军防空兵</a>
+							    <a href="#" target="_blank">战车</a>
+							    <a href="#" target="_blank">反潜机</a>
+						    </span>
+						</div>
+						<div class="b"></div>
+						<div >
+							<a href="#" class="but">57</a>
+						</div>
+					</div>
+				</div>
+				<a href="#" class="more">查看查看更多</a>
+				<div class="h">
+				<div class="y">
+				    <div class="tp">
+					    <a href="#" class="left1"><img src="img/mil_index_05.jpg"></a>
+				    </div>
+					    <a target="_blank" class="linkto" href="#">运20大型运输机即将服役 性能与美军C17相比如何？</a>
+				    <div class="co">
+					    <div class="info">
+						    <span class="from">腾讯军事</span>
+						    <span class="keywords">
+							    <a href="#" target="_blank">运20</a>
+							    <a href="#" target="_blank">c17</a>
+							    <a href="#" target="_blank">大型运输机</a>
+						    </span>
+						</div>
+						<div class="i"></div>
+						<div >
+							<a href="#" class="but">776</a>
+						</div>
+					</div>
+				</div>
+				<div class="y">
+				    <div class="tp">
+					    <a href="#" class="left1"><img src="img/mil_index_09.jpg"></a>
+				    </div>
+					    <a target="_blank" class="linkto" href="#">运20大型运输机即将服役 性能与美军C17相比如何？</a>
+				    <div class="co">
+					    <div class="info">
+						    <span class="from">腾讯军事</span>
+						    <span class="keywords">
+							    <a href="#" target="_blank">运20</a>
+							    <a href="#" target="_blank">c17</a>
+							    <a href="#" target="_blank">大型运输机</a>
+						    </span>
+						</div>
+						<div class="i"></div>
+						<div >
+							<a href="#" class="but">776</a>
+						</div>
+					</div>
+				</div>
+				<div class="y">
+				    <div class="tp">
+					    <a href="#" class="left1"><img src="img/mil_index_06.jpg"></a>
+				    </div>
+					    <a target="_blank" class="linkto" href="#">运20大型运输机即将服役 性能与美军C17相比如何？</a>
+				    <div class="co">
+					    <div class="info">
+						    <span class="from">腾讯军事</span>
+						    <span class="keywords">
+							    <a href="#" target="_blank">运20</a>
+							    <a href="#" target="_blank">c17</a>
+							    <a href="#" target="_blank">大型运输机</a>
+						    </span>
+						</div>
+						<div class="i"></div>
+						<div >
+							<a href="#" class="but">776</a>
+						</div>
+					</div>
+				</div>
+				<div class="y">
+				    <div class="tp">
+					    <a href="#" class="left1"><img src="img/mil_index_07.jpg"></a>
+				    </div>
+					    <a target="_blank" class="linkto" href="#">运20大型运输机即将服役 性能与美军C17相比如何？</a>
+				    <div class="co">
+					    <div class="info">
+						    <span class="from">腾讯军事</span>
+						    <span class="keywords">
+							    <a href="#" target="_blank">运20</a>
+							    <a href="#" target="_blank">c17</a>
+							    <a href="#" target="_blank">大型运输机</a>
+						    </span>
+						</div>
+						<div class="i"></div>
+						<div >
+							<a href="#" class="but">776</a>
+						</div>
+					</div>
+				</div>
+				<div class="y">
+				    <div class="tp">
+					    <a href="#" class="left1"><img src="img/mil_index_08.jpg"></a>
+				    </div>
+					    <a target="_blank" class="linkto" href="#">运20大型运输机即将服役 性能与美军C17相比如何？</a>
+				    <div class="co">
+					    <div class="info">
+						    <span class="from">腾讯军事</span>
+						    <span class="keywords">
+							    <a href="#" target="_blank">运20</a>
+							    <a href="#" target="_blank">c17</a>
+							    <a href="#" target="_blank">大型运输机</a>
+						    </span>
+						</div>
+						<div class="i"></div>
+						<div >
+							<a href="#" class="but">776</a>
+						</div>
+					</div>
+				</div>
+				<div class="m">
+					<a target="_blank" class="link" href="#">美军在亚太地区的第2艘航母开始巡航</a>
+					<ul>
+						<li><a href="#"><img src="img/mil_index_06.jpg"></a></li>
+						<li><a href="#"><img src="img/mil_index_07.jpg"></a></li>
+						<li class="k"><a href="#"><img src="img/mil_index_08.jpg"></a></li>
+					</ul>
+					 <div class="co">
+					    <div class="info">
+						    <span class="from">环球网</span>
+						    <span class="keywords">
+							    <a href="#" target="_blank">海军防空兵</a>
+							    <a href="#" target="_blank">战车</a>
+							    <a href="#" target="_blank">反潜机</a>
+						    </span>
+						</div>
+						<div class="b"></div>
+						<div >
+							<a href="#" class="but">57</a>
+						</div>
+					</div>
+				</div>
+				<div class="m">
+					<a target="_blank" class="link" href="#">天兵亮剑 空降战车高原昼夜发射导弹</a>
+					<ul>
+						<li><a href="#"><img src="img/mil_index_09.jpg"></a></li>
+						<li><a href="#"><img src="img/mil_index_10.jpg"></a></li>
+						<li class="k"><a href="#"><img src="img/mil_index_11.jpg"></a></li>
+					</ul>
+					 <div class="co">
+					    <div class="info">
+						    <span class="from">环球网</span>
+						    <span class="keywords">
+							    <a href="#" target="_blank">海军防空兵</a>
+							    <a href="#" target="_blank">战车</a>
+							    <a href="#" target="_blank">反潜机</a>
+						    </span>
+						</div>
+						<div class="b"></div>
+						<div >
+							<a href="#" class="but">57</a>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+			<div id="right">
+			    <div class="jiang">
+			        <div class="jwt">
+			    	    <h2></h2>
+			    	    <span class="more1"><a href="#">更多</a></span>
+			        </div>
+			        <div class="yun">
+			        	<h3><a href="#">运20性能与美军C17比如何？</a></h3>
+			        	<div class="pic"><img src="img/mil_index_27.jpg"></div>
+			        	<div class="text">
+			        	   <p>运20比C17服役晚了20年，中国人用后发优势实现了哪些超越？
+			        	   <a target="_blank" href="#">[详细]</a>
+                           </p>
+                        </div>
+			        </div>
+			         <div class="yun">
+			        	<h3><a href="#">如何破解我维和部队遭袭难题</a></h3>
+			        	<div class="pic"><img src="img/mil_index_28.jpg"></div>
+			        	<div class="text">
+			        	   <p>恐怖分子所用手段不难反制，但如何识别坏人却非常难以实现。
+			        	   <a target="_blank" href="#">[详细]</a>
+                           </p>
+                        </div>
+                        <div class="jilin">
+                           <ul>
+                               <li>吉林一号拍美航母只是第一步</li>
+                               <li>吉林一号拍美航母只是第一步</li>
+                               <li>吉林一号拍美航母只是第一步</li>
+                            </ul>
+                        </div>
+			        </div>
+                    <div class="jjj" >
+			    	    <h2></h2>
+			    	    <span class="more1"><a href="#">更多</a></span>
+			        </div>
+			         <div class="picture">
+			    	        <div class="inner">
+			    	            <a href="#" style="display:block"><img src="img/mil_index_29.jpg"><span>解放军的轻型坦克之梦</span></a>
+			    	            <a href="#" style="display:none"><img src="img/mil_index_30.jpg"><span>“王牌战鹰”们的一天</span></a>
+			    	            <a href="#" style="display:none"><img src="img/mil_index_31.jpg"><span>解放军的轻型坦克之梦</span></a>
+			    	            <a href="#" style="display:none"><img src="img/mil_index_32.jpg"><span>“王牌战鹰”们的一天</span></a>
+			    	            <a href="#" style="display:none"><img src="img/mil_index_33.jpg"><span>解放军的轻型坦克之梦</span></a>
+			    	         </div>
+			    	    	<div id="ico"><span class="g"></span><span></span><span></span><span></span><span></span></div>
+			    	</div>
+			    </div>
+			    <div class="zuo">
+			    	<div class="cap">
+			    		<a href="#" class="o">昨日点击排行</a>
+			    		<a href="#">今日点击排行</a>
+			    		<a href="#">本周热榜</a>
+			    	</div>
+			    	<div class="liebiao" id="l1">
+			    	    <ul>
+			    	       <li><span class="toprank">1</span><a href="#">简氏：2015年全球军备销售激增 亚洲增长最多</a></li>
+			    	       <li><span class="toprank">2</span><a href="#">简氏：2015年全球军备销售激增 亚洲增长最多</a></li>
+			    	       <li><span class="toprank">3</span><a href="#">简氏：2015年全球军备销售激增 亚洲增长最多</a></li>
+			    	       <li><span class="toprank">4</span><a href="#">简氏：2015年全球军备销售激增 亚洲增长最多</a></li>
+			    	       <li><span class="toprank">5</span><a href="#">简氏：2015年全球军备销售激增 亚洲增长最多</a></li>
+			    	       <li><span class="toprank">6</span><a href="#">简氏：2015年全球军备销售激增 亚洲增长最多</a></li>
+			    	       <li><span class="toprank">7</span><a href="#">简氏：2015年全球军备销售激增 亚洲增长最多</a></li>
+			    	       <li><span class="toprank">8</span><a href="#">简氏：2015年全球军备销售激增 亚洲增长最多</a></li>
+			    	       <li><span class="toprank">9</span><a href="#">简氏：2015年全球军备销售激增 亚洲增长最多</a></li>
+			    	       <li><span class="toprank">10</span><a href="#">简氏：2015年全球军备销售激增 亚洲增长最多</a></li>
+			    	    </ul>
+			    	</div>
+			    	<div class="liebiao" id="l2" style="display: none;">
+			    	    <ul>
+			    	       <li><span class="toprank">1</span><a href="#">中国两个重要邻国在边境爆发武装冲突 多人死</a></li>
+			    	       <li><span class="toprank">2</span><a href="#">中国两个重要邻国在边境爆发武装冲突 多人死</a></li>
+			    	       <li><span class="toprank">3</span><a href="#">中国两个重要邻国在边境爆发武装冲突 多人死</a></li>
+			    	       <li><span class="toprank">4</span><a href="#">中国两个重要邻国在边境爆发武装冲突 多人死</a></li>
+			    	       <li><span class="toprank">5</span><a href="#">中国两个重要邻国在边境爆发武装冲突 多人死</a></li>
+			    	       <li><span class="toprank">6</span><a href="#">中国两个重要邻国在边境爆发武装冲突 多人死</a></li>
+			    	       <li><span class="toprank">7</span><a href="#">中国两个重要邻国在边境爆发武装冲突 多人死</a></li>
+			    	       <li><span class="toprank">8</span><a href="#">中国两个重要邻国在边境爆发武装冲突 多人死</a></li>
+			    	       <li><span class="toprank">9</span><a href="#">中国两个重要邻国在边境爆发武装冲突 多人死</a></li>
+			    	       <li><span class="toprank">10</span><a href="#">中国两个重要邻国在边境爆发武装冲突 多人死</a></li>
+			    	    </ul>
+			    	</div>
+			    	<div class="liebiao" id="l3" style="display: none;">
+			    	    <ul>
+			    	       <li><span class="toprank">1</span><a href="#">安倍凌晨1点被人从床上叫醒：中俄军舰来了</a></li>
+			    	       <li><span class="toprank">2</span><a href="#">安倍凌晨1点被人从床上叫醒：中俄军舰来了</a></li>
+			    	       <li><span class="toprank">3</span><a href="#">安倍凌晨1点被人从床上叫醒：中俄军舰来了</a></li>
+			    	       <li><span class="toprank">4</span><a href="#">安倍凌晨1点被人从床上叫醒：中俄军舰来了</a></li>
+			    	       <li><span class="toprank">5</span><a href="#">安倍凌晨1点被人从床上叫醒：中俄军舰来了</a></li>
+			    	       <li><span class="toprank">6</span><a href="#">安倍凌晨1点被人从床上叫醒：中俄军舰来了</a></li>
+			    	       <li><span class="toprank">7</span><a href="#">安倍凌晨1点被人从床上叫醒：中俄军舰来了</a></li>
+			    	       <li><span class="toprank">8</span><a href="#">安倍凌晨1点被人从床上叫醒：中俄军舰来了</a></li>
+			    	       <li><span class="toprank">9</span><a href="#">安倍凌晨1点被人从床上叫醒：中俄军舰来了</a></li>
+			    	       <li><span class="toprank">10</span><a href="#">安倍凌晨1点被人从床上叫醒：中俄军舰来了</a></li>
+			    	    </ul>
+			    	</div>
+			    </div>
+			</div>
+		</div>
+
+	<span class="goTop" title="返回顶部"></span>
+	</body>
+</html>

@@ -1,0 +1,541 @@
+*{
+	margin: 0 auto;
+}
+body{
+	text-align: center;
+	font: 12px/1.5 'Hiragino Sans GB','\5FAE\8F6F\96C5\9ED1',tahoma,arial,sans-serif;
+    color: #222;
+}
+#top{
+	width: 1000px;
+    height: 59px;
+    position: relative;
+}
+#logo{
+	width: 131px;
+	height: 30px;
+	float: left;
+	margin-top: 15px;
+	margin-right: 10px;
+}
+#jun{
+	float: left;
+	margin-top: 21px;
+	margin-right: 25PX;
+	
+}
+#rss a{
+     float: left;
+    margin: 19px 0 0 16px;
+    width: 100PX;
+    font: 12px/28px "Arial";
+    background: url(../img/mil_index_03.jpg) no-repeat 15px center;
+    color: #000;
+    text-decoration: none;
+    display: block;
+}
+#rss a:hover{
+	text-decoration: underline;
+}
+#serach{
+    width: 242px;
+    height: 28px;
+    float: right;
+    margin: 17px 1px 0 0;
+    position: relative;
+}
+#serach #txt{
+	width: 187px;
+    height: 20px;
+    padding: 3px;
+    border: 1px solid #d4d4d4;
+    border-right: 0px;
+    color: #818181;
+    float: left;
+    line-height: 20px;
+}
+#serach #sub{
+	width: 48px;
+    height: 28px;
+    border: 0;
+    float: left;
+    background: #578f66 url(../img/mil_index_04.png) 16px 7px no-repeat;
+    cursor: pointer;
+}
+#nav{
+	height: 40px;
+    border-top: 3px solid #487a55;
+    border-bottom: 1px solid #d9d9d9;
+    box-shadow: 0px 2px #f3f3f3;
+}
+#nav1{
+	width:1000px;
+	height: 40px;
+}
+#nav ul{
+	list-style: none;
+	margin-left: -40px;
+}
+#nav ul li{
+	width: 125px;
+    height: 40px;
+    line-height: 36px;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+}
+#nav ul li a{
+	color: #222222;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+#nav ul li a#t,#nav ul li a:hover{
+	background: url(../img/mil_index_05.png);
+	color: #fff;
+}
+#content{
+	width: 1000px;
+	height: 2000px;
+	position: relative;
+}
+#left{
+	float: left;
+	width: 670px;
+	height: auto;
+        margin-right:30px;
+}
+#left h2{
+	font-weight: normal;
+    font-size: 20px;
+    border-left: 4px solid #578f66;
+    padding-left: 10px;
+    height: 20px;
+    line-height: 18px;
+    margin-bottom: 15px;
+    text-align: left;
+    margin-top: 15px;
+}
+#left #banner {
+	position: relative;
+	width: 670px;
+    height: 346px;
+    overflow: hidden;
+	
+}
+#left #banner img{
+    width: 670px;
+    height: 346px;
+    vertical-align: bottom;
+    position: absolute;
+    left:0px;
+    top:0px;
+    z-index: 0;
+}
+#banner .overlay{
+	position: absolute;
+    height: 62px;
+    line-height: 62px;
+    background: url(../img/mil_index_06.png) 0 0 repeat-x;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    z-index: 100;
+}
+a{
+	text-decoration: none;
+	color: #222;
+}
+a:hover{
+	color: #497B56;
+}
+.y{
+	position: relative;
+	width: 670px;
+	height: 100px;
+	border-bottom: 1px solid #f0f0f0;
+	padding-bottom: 20px;
+    padding-top: 20px;
+}
+.y:hover,.m:hover,.more:hover{
+	background-color: #f4f4f4;
+}
+.y .tp{
+   width: 120px;
+    height: 96px;
+    float: left;
+    overflow: hidden;
+    position: absolute;
+    left:0px;
+    top:0px;
+    z-index: 0;
+}
+.y .tp img{
+	width: 120px;
+    height: 96px;
+	}
+.y .linkto{
+	font-size: 20px;
+    font-weight: normal;
+    display: inline-block;
+    line-height: 24px;
+    text-decoration: none;
+    color: #222;
+    float: right;
+    margin-right: 56px;
+}
+.m .link{
+	font-size: 20px;
+    font-weight: normal;
+    display: inline-block;
+    line-height: 24px;
+    text-decoration: none;
+    color: #222;
+    margin: 20px 0 10px -340px;
+}
+.y .linkto:hover,.m .link:hover,.jiang .yun a:hover{
+	color: #487A55;
+}
+
+.y .co{
+	float: right;
+	width: 530px;
+	height: 30px;
+	margin-top: 50px;
+	position: relative;
+}
+.co .info{
+	float: left;
+	margin-left: -10px;
+}
+.info .from{
+	margin-right: 24px;
+    font-size: 14px;
+    margin-left: 20px;
+    color: #9E9E9E;
+}
+.info .keywords a{
+	display: inline-block;
+    color: #9e9e9e;
+    background: #f5f5f5;
+    padding: 3px 6px;
+    margin-right: 12px;
+    text-decoration: none;
+}
+.info .keywords a:hover{
+	color: #487a55;
+    background: #e3f3e7;
+}
+.co .i{
+	width: 19px;
+    height: 15px;
+    background: url(../img/mil_index_05.png) no-repeat 0 -75px;
+    margin-left: 163px;
+    position: relative;
+    float: left;
+    }
+.co .but{
+	margin-left: 16px;
+    padding: 0 5px 0 20px;
+    font-size: 14px;
+    color: #d3d3d3;
+    line-height: 14px;
+    height: 16px;
+    background: url(../img/mil_index_05.png) no-repeat -36px -75px;
+    float: right;
+}
+.co .but:hover{
+    color: #497b56;
+	background: url(../img/mil_index_05.png) no-repeat -36px -125px;
+	cursor: pointer;
+}
+.co .i:hover{
+	background: url(../img/mil_index_05.png) no-repeat 0px -125px;
+	cursor: pointer;
+}
+.m{
+	width: 670px;
+	height: 270px;
+	border-bottom: 1px solid #f0f0f0;
+}
+.m ul{
+	list-style: none;
+	margin-left: -40px;
+}
+.m ul li{
+	width: 200px;
+    height: 160px;
+    margin-right: 35px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    display: block;
+}
+.m ul li.k{
+	margin-right: 0px;
+}
+.m ul li img{
+	width: 200px;
+    height: 160px;
+    position: absolute;
+	left:0px;
+    top:0px;
+    z-index: 0;
+}
+.m .co{
+	margin-top: 175px;
+	width: 670px;
+	height: 30px;
+	position: relative;
+	clear: both;
+}
+.m .co .b{
+	width: 19px;
+    height: 15px;
+    background: url(../img/mil_index_05.png) no-repeat 0 -75px;
+    margin-left: 310px;
+    position: relative;
+    float: left;
+    }
+.m .co .b:hover{
+	background: url(../img/mil_index_05.png) no-repeat 0px -125px;
+	cursor: pointer;
+}
+.more{
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 16px;
+    color: #aeaeae;
+    border: 1px solid #f0f0f0;
+    border-top: 0;
+}
+.h{
+	display: none;
+}
+#right{
+    width:300px;
+    height: auto;
+    float: right;
+}
+#right .jiang{
+       background: #FAFAFA;
+       height:auto;
+       
+       width: 300px;
+   
+}
+#right .jwt{
+   padding-top: 23px;
+   height: 33px;
+   background: url(../img/mil_index_08.png) 15px -4px no-repeat;
+   position: relative;
+
+}
+.jiang .jjj{
+margin: 17px 0 16px;
+height: 20px;
+background: url(../img/mil_index_08.png) 15px -74px no-repeat;
+position: relative;
+}
+.jwt h2,.jjj h2{
+    text-indent: -999em;
+position: relative;
+overflow: hidden;
+width: 10px;
+height:20px;
+border-left: 4px solid #578F66;
+float: left;
+}
+.jwt .more1,.jjj .more1{
+    float: right;
+    line-height: 15px;
+   height: 15px;
+}
+.jwt .more1 a,.jjj .more1 a{
+    color: #9E9E9E;
+    margin-right: 12px;
+   font-size: 14px;
+}
+.jwt .more1 a:hover,.jjj .more1 a:hover{
+    color:#000;
+}
+.jiang .yun{
+clear: both;
+overflow: hidden;
+padding: 12px 12px 14px;
+position: relative;
+height: auto;
+border-bottom: solid 1px #ccc;
+}
+.jiang .yun h3{
+    font-size: 16px;
+font-weight: normal;
+color: #222;
+text-align: left;
+}
+.yun .pic{
+    float: left;
+    margin: 14px 12px 0 0;
+    width: 120px;
+    height: 90px;
+    display: inline;
+}
+.yun .text{
+    overflow: hidden;
+    zoom: 1;
+    color: #9E9E9E;
+}
+.text p{
+display: block;
+margin: 16px 13px 0px 0px;
+line-height: 23px;
+font-size: 14px;
+text-indent: 0px;
+}
+.text p a{
+    color: #222;
+}
+.yun .jilin ul{
+    list-style:none;
+    margin-left: -40px;
+    margin-top:14px;
+}
+.jilin ul li{
+padding-left: 14px;
+background: url(../img/mil_index_05.png) 0 -166px no-repeat;
+line-height: 30px;
+color: #404040;
+text-align: left;
+}
+.picture{
+    padding: 0 12px 30px;
+    width: 276px;
+   height: 164px;
+   overflow: hidden;
+   position: relative;
+   margin-top:14px;
+
+}
+.inner img{
+    width:270px;
+    height: 160px;
+}
+.inner span{
+position: absolute;
+left: 14px;
+bottom: 30px;
+display: block;
+width: 270px;
+height:29px;
+line-height: 29px;
+background: url(../img/mil_index_09.png) 0 -30px no-repeat;
+color: white;
+text-indent: 14px;
+font-size: 14px;
+z-index: 11;
+text-align: left;
+}
+#ico{
+	width: 100px;
+	height: 30px;
+	position: absolute;
+	right:0px;
+	bottom: 25px;
+	z-index: 12;
+}
+#ico span{
+	width: 5px;
+	height: 5px;
+	border-radius: 2.5px;
+	display: inline-block;
+	background-color: #ddd;
+	margin-right: 5px;
+}
+#ico span.g{
+	background: #497B56;
+}
+.zuo{
+	margin-top:20px;
+	background: #FAFAFA;
+	width: 300px;
+	height: auto;
+}
+.cap {
+	width: 300px;
+	height: 37px;
+}
+.cap  a{
+	display:block;
+    font-size: 16px;
+    color: #000000;
+    background: #FFF;
+    float: left;
+    height: 37px;
+    line-height: 37px;
+    padding: 0 6px;
+    border-top: 2px solid #c6c6c6;
+    border-right: 1px solid #C6C6C6;
+    cursor: default;
+}
+.cap  a.o{
+	background: #FAFAFA;
+	color: #497B56;
+	border-top: solid 1px #497B56;
+}
+.liebiao{
+	width: 300px;
+	height: auto;
+	margin-top: 20px;
+
+}
+.liebiao ul{
+    list-style:none;
+    margin-left: -40px;
+
+    
+    
+}
+.liebiao ul li {
+    display: block;
+    line-height: 16px;
+    height: 16px;
+    overflow: hidden;
+    margin: 2px 0 16px;
+   }
+.liebiao ul li span{
+	width: 15px;
+    height: 15px;
+    background: #578f66;;
+    display: inline-block;
+    line-height: 16px;
+    text-align: center;
+    margin-right: 1px;
+    margin-left: 10px;
+    float: left;
+    color: #fff;
+    font-size: 12px;
+}
+.liebiao ul li a{
+	
+}
+.goTop{
+  position: fixed;
+  left: 50%;
+  bottom: 50px;
+  margin-left: 550px;
+  width: 72px;
+  height: 91px;
+  background: url(../img/mil_index_07.png) 0 0 no-repeat;
+  cursor: pointer;
+  z-index: 99;
+  display:none;
+}
+.goTop:hover{
+ background: url(../img/mil_index_07.png) -100px 0px  no-repeat;
+}
